@@ -27,7 +27,7 @@ export const showFingerprint = (fingerprint) => {
 
 const writePageUrl = () => {
   const urlContainer = document.querySelector('.fingerprint__url');
-  const url = window.location.origin;
+  const url = window.location.href;
   urlContainer.innerHTML = `<a href="${url}">${url}</a>`;
 };
 
