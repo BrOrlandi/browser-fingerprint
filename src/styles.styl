@@ -3,10 +3,11 @@ body {
   color: white;
   font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 24px;
+  word-break: break-word;
 }
 
 .app {
-  padding-top: 100px;
+  padding: 100px 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,15 +17,19 @@ body {
 
 .title {
   margin-bottom: 70px;
+  text-align: center;
 }
 
 .credits {
-  position: fixed;
-  bottom: 1em;
+  margin-top: 50px;
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
 
-  a {
-    color: white;
-  }
+}
+
+a {
+  color: white;
 }
 
 .logo {
@@ -50,6 +55,10 @@ $inputStyle() {
     outline: 0;
     border-color: lighten($buttonColor, 25%)
   }
+}
+
+.fingerprint__value {
+  margin-bottom: 50px;
 }
 
 #form {

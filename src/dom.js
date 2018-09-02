@@ -24,3 +24,11 @@ export const showFingerprint = (fingerprint) => {
   const nameContainer = fingerprintContainer.querySelector('.fingerprint__name');
   nameContainer.innerText = fingerprint.name;
 };
+
+const writePageUrl = () => {
+  const urlContainer = document.querySelector('.fingerprint__url');
+  const url = window.location.origin;
+  urlContainer.innerHTML = `<a href="${url}">${url}</a>`;
+};
+
+writePageUrl();
