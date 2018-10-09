@@ -1,6 +1,6 @@
 import Fingerprint2 from 'fingerprintjs2';
 import { showFingerprint, showForm, showLoader } from './dom';
-import './dog';
+import './gif';
 
 let fingerprint;
 const form = document.querySelector('#form');
